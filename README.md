@@ -4,7 +4,7 @@ Datadog Dashboard - PCF Stemcells
 To Update the vulnerabilities update the vulnerabilities.json file.
 
 Example:
-
+```
 {
   "tent-sla": {
     "sla": "SLA ≤ 7 Days",
@@ -34,5 +34,5 @@ Example:
     "vul3": "USN-3424-1: libxml2 vulnerabilities"
   }
 }
-
+```
 ***Modify the vul# list for each environment along with the SLA values ( ≤ update color value to MediumSeaGreen,  ≥ update color value to red)
