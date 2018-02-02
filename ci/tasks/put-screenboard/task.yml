@@ -1,0 +1,25 @@
+---
+platform: linux
+image_resource:
+  type: docker-image
+  source:
+    repository: docker.prod.pdc.digital.csaa-insurance.aaa.com/ubuntu-ruby-aws
+    tag: latest
+
+inputs:
+  - name: dashboard-repo
+
+run:
+  path: dashboard-repo/ci/tasks/put-screenboard/put-screenboard.rb
+
+params:
+  params:
+    AWS_ACCESS_KEY:
+    AWS_SECRET_KEY:
+    DATADOG_API_KEY:
+    DATADOG_APP_KEY:
+    DATADOG_BOARD_ID:
+    DATADOG_BOARD_TITLE:
+    TENT_ENV_FILE:
+    GDC_ENV_FILE:
+    PDC_ENV_FILE:

@@ -1,0 +1,41 @@
+resource_types:
+- name: ubuntu
+  type: docker-image
+  source:
+    repository: docker.prod.pdc.digital.csaa-insurance.aaa.com/ubuntu-ruby-aws
+    tag: latest
+
+jobs:
+- name: dashboard
+  plan:
+  - get: scheduler {{scheduler-time-window-start}} to {{scheduler-time-window-stop}}
+    trigger: true
+  - get: dashboard-repo
+    trigger: true
+  - task: put-screenboard
+    file: dashboard-repo/ci/tasks/put-screenboard/task.yml
+    params:
+      AWS_ACCESS_KEY: {{aws_access_key}}
+      AWS_SECRET_KEY: {{aws_secret_key}}
+      DATADOG_API_KEY: {{datadog_api_key}}
+      DATADOG_APP_KEY: {{datadog_app_key}}
+      DATADOG_BOARD_ID: {{datadog_board_id}}
+      DATADOG_BOARD_TITLE: {{board_title}}
+      TENT_ENV_FILE: {{tent_env_file}}
+      GDC_ENV_FILE: {{gdc_env_file}}
+      PDC_ENV_FILE: {{pdc_env_file}}
+
+resources:
+- name: dashboard-repo
+  type: git
+  source:
+    uri: ssh://git@github.com:aaa-ncnu-ie/ds-security-Stemcell-Dashboard.git
+    branch: master
+    private_key: {{github_private_key}}
+
+- name: scheduler {{scheduler-time-window-start}} to {{scheduler-time-window-stop}}
+  type: time
+  source:
+    start: {{scheduler-time-window-start}}
+    stop: {{scheduler-time-window-stop}}
+    location: {{scheduler-time-location}}
