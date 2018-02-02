@@ -15,7 +15,6 @@ mgcc119147:docker grh8dee$ docker push docker.prod.pdc.digital.csaa-insurance.aa
 The push refers to repository [docker.prod.pdc.digital.csaa-insurance.aaa.com/ubuntu-dogapi]
 2d9f3c0e2e38: Pushed
 42b278653656: Layer already exists
-
 24588477873e: Layer already exists
 5c3da56f51c2: Layer already exists
 2f5b0990636a: Layer already exists
