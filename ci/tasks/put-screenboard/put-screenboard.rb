@@ -1,5 +1,4 @@
-#curl -X GET \ "https://app.datadoghq.com/api/v1/screen/276047?api_key=8a91bd828137db6e599e3932c20ef336&application_key=161bb8ec9011d9e2a3fbf87ae531b64d789e0533"
-
+#!/usr/bin/env ruby
 require 'rubygems'
 require 'dogapi'
 require 'json'
