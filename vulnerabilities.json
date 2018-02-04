@@ -1,7 +1,7 @@
 {
   "tent-sla": {
     "sla": "SLA ≤ 7 Days",
-    "color": "red"
+    "color": "MediumSeaGreen"
   },
   "tent": {
     "vul1": "No known vulnerabilities"
