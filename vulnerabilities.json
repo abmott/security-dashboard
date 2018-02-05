@@ -11,7 +11,7 @@
     "color": "MediumSeaGreen"
   },
   "gdc": {
-    "vul1": "No known vulnerabilities"
+    "vul1": "Test"
   },
   "pdc-sla": {
     "sla": "SLA ≤ 7 Days",
