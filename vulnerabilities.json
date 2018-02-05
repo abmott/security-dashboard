@@ -11,11 +11,7 @@
     "color": "MediumSeaGreen"
   },
   "gdc": {
-    "vul1": "USN-3522-2: Linux (Xenial HWE) vulnerability (This flaw is known as Meltdown.)",
-    "vul4": "USN-3392-2: Linux kernel (Xenial HWE) regression",
-    "vul5": "USN-3434-1: Libidn vulnerability",
-    "vul6": "USN-3432-1: ca-certificates update",
-    "vul7": "USN-3424-1: libxml2 vulnerabilities"
+    "vul1": "No known vulnerabilities"
   },
   "pdc-sla": {
     "sla": "SLA ≤ 7 Days",
