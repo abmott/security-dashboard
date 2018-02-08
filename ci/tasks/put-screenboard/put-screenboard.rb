@@ -54,7 +54,7 @@ end
 environment_info["#{env}_version"] = version
 environment_info["#{env}_stemcell"] = stemcell
 end
-puts "Updated #{board_title} with board id = #{board_id}"
+puts "Updated #{ENV['DATADOG_BOARD_TITLE']} with board id = #{ENV['DATADOG_BOARD_ID']}"
 puts environment_info
 #puts environment_info['pdc_stemcell']
 #puts environment_info['gdc_stemcell']
