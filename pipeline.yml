@@ -8,11 +8,10 @@ resource_types:
 jobs:
 - name: dashboard
   plan:
-  - aggregate:
-    - get: scheduler {{scheduler-time-window-start}} to {{scheduler-time-window-stop}}
-      trigger: true
-    - get: dashboard-repo
-      trigger: true
+  - get: scheduler {{scheduler-time-window-start}} to {{scheduler-time-window-stop}}
+    trigger: true
+  - get: dashboard-repo
+    trigger: true
   - task: put-screenboard
     file: dashboard-repo/ci/tasks/put-screenboard/task.yml
     params:
