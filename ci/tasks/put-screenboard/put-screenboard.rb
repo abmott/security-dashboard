@@ -54,10 +54,11 @@ end
 environment_info["#{env}_version"] = version
 environment_info["#{env}_stemcell"] = stemcell
 end
+puts "Updated #{board_title} with board id = #{board_id}"
 puts environment_info
-puts environment_info['pdc_stemcell']
-puts environment_info['gdc_stemcell']
-puts environment_info['tent_stemcell']
+#puts environment_info['pdc_stemcell']
+#puts environment_info['gdc_stemcell']
+#puts environment_info['tent_stemcell']
 
 tent_vul_start = 19
 tent_sla_start = ( vul_list['tent'].count.to_i * 3.5 ) + tent_vul_start
