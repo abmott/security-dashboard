@@ -14,8 +14,8 @@
     "vul1": "No known vulnerabilities"
   },
   "pdc-sla": {
-    "sla": "SLA ≤ 7 Days",
-    "color": "MediumSeaGreen"
+    "sla": "SLA ≥ 7 Days",
+    "color": "Red"
   },
   "pdc": {
     "vul1": "USN-3582-2: Linux kernel (Xenial HWE) vulnerabilities"
