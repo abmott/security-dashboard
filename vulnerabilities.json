@@ -4,7 +4,7 @@
     "color": "MediumSeaGreen"
   },
   "tent": {
-    "vul1": "No unknown vulnerabilities - test"
+    "vul1": "No known vulnerabilities"
   },
   "gdc-sla": {
     "sla": "SLA ≤ 7 Days",
@@ -14,10 +14,10 @@
     "vul1": "No known vulnerabilities"
   },
   "pdc-sla": {
-    "sla": "SLA ≤ 7 Days",
-    "color": "MediumSeaGreen"
+    "sla": "SLA ≥ 7 Days",
+    "color": "Red"
   },
   "pdc": {
-    "vul1": "No known vulnerabilities"
+    "vul1": "USN-3582-2: Linux kernel (Xenial HWE) vulnerabilities"
   }
 }
