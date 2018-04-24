@@ -4,7 +4,7 @@
     "color": "MediumSeaGreen"
   },
   "tent": {
-    "vul1": "No known vulnerabilities - test"
+    "vul1": "No unknown vulnerabilities - test"
   },
   "gdc-sla": {
     "sla": "SLA ≤ 7 Days",

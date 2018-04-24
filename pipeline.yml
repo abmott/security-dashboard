@@ -32,7 +32,6 @@ resources:
     uri: ssh://git@ssh.github.com:443/aaa-ncnu-ie/ds-security-Stemcell-Dashboard.git
     branch: master
     private_key: {{github_private_key}}
-
 - name: scheduler {{scheduler-time-window-start}} to {{scheduler-time-window-stop}}
   type: time
   source:
